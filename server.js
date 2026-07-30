@@ -30,7 +30,13 @@ const MIME = {
 };
 
 // Dateien, die nie ausgeliefert werden sollen
-const BLOCKED = new Set(['package.json', 'package-lock.json', 'server.js']);
+const BLOCKED = new Set([
+  'package.json',
+  'package-lock.json',
+  'server.js',
+  'app.js',
+  'index.js'
+]);
 
 function send(res, status, body, type) {
   res.writeHead(status, {
