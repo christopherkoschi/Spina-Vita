@@ -4,10 +4,13 @@
   "private": true,
   "description": "Website der Praxis Spina Vita, Physiotherapie Rauschmann, Frankfurt am Main",
   "license": "UNLICENSED",
+  "main": "server.js",
   "scripts": {
-    "start": "npx --yes serve .",
-    "dev": "npx --yes serve .",
+    "start": "node server.js",
     "build": "echo \"Statische Website, kein Build-Schritt notwendig.\""
+  },
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [
     "physiotherapie",
